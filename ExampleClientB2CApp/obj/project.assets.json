@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Managers/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Managers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Managers.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Managers/1.0.0": {
+      "type": "project",
+      "path": "../Managers/Managers.csproj",
+      "msbuildProject": "../Managers/Managers.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Managers >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Jonathan\\.nuget\\packages\\": {}
@@ -32,7 +51,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Jonathan\\source\\repos\\Get-claims-from-Azure-B2C-jwt-token\\Managers\\Managers.csproj": {
+              "projectPath": "C:\\Users\\Jonathan\\source\\repos\\Get-claims-from-Azure-B2C-jwt-token\\Managers\\Managers.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

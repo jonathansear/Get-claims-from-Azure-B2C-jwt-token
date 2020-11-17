@@ -1,25 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using ExampleClientB2CApp.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using ExampleClientB2CApp.Models;
+using System.Diagnostics;
+using Managers.Interface;
+using System.Linq;
+using Managers.Modals;
 
 namespace ExampleClientB2CApp.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ITokenManager _tokenManager;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ITokenManager tokenManager)
         {
-            _logger = logger;
+            _tokenManager = tokenManager;
         }
 
         public IActionResult Index()
         {
+            ClaimProperties UserClaims = _tokenManager.ConvertClaims(User.Identities.FirstOrDefault().Claims);
+
+            string name = UserClaims.name;
+
+            string jobTitle = UserClaims.jobTitle;
+
             return View();
         }
 

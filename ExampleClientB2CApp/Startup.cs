@@ -1,13 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Managers.Interface;
+using Managers;
 
 namespace ExampleClientB2CApp
 {
@@ -23,6 +20,9 @@ namespace ExampleClientB2CApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Add Token Manager to dependency injection 
+            services.Add(new ServiceDescriptor(typeof(ITokenManager), new TokenManager()));
+
             services.AddControllersWithViews();
         }
 
