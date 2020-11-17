@@ -1,0 +1,7 @@
+C:\Users\Jonathan\source\repos\Get-claims-from-Azure-B2C-jwt-token\Managers\bin\Debug\netstandard2.0\Managers.deps.json
+C:\Users\Jonathan\source\repos\Get-claims-from-Azure-B2C-jwt-token\Managers\bin\Debug\netstandard2.0\Managers.dll
+C:\Users\Jonathan\source\repos\Get-claims-from-Azure-B2C-jwt-token\Managers\bin\Debug\netstandard2.0\Managers.pdb
+C:\Users\Jonathan\source\repos\Get-claims-from-Azure-B2C-jwt-token\Managers\obj\Debug\netstandard2.0\Managers.AssemblyInfoInputs.cache
+C:\Users\Jonathan\source\repos\Get-claims-from-Azure-B2C-jwt-token\Managers\obj\Debug\netstandard2.0\Managers.AssemblyInfo.cs
+C:\Users\Jonathan\source\repos\Get-claims-from-Azure-B2C-jwt-token\Managers\obj\Debug\netstandard2.0\Managers.dll
+C:\Users\Jonathan\source\repos\Get-claims-from-Azure-B2C-jwt-token\Managers\obj\Debug\netstandard2.0\Managers.pdb
