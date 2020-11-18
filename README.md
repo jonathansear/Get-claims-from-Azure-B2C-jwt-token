@@ -1,4 +1,4 @@
-# Get claims from Azure B2C jwt token and format the Claim
+# Format the ClaimsPrincipal object returned by Azure B2C into a usable claims object 
 
 ## Introduction  
 
