@@ -35,7 +35,6 @@ public void ConfigureServices(IServiceCollection services)
     
 4. Finally Inject it into your controller 
 ```C#
-public void ConfigureServices(IServiceCollection services)
         ITokenManager _tokenManager;
 
         public HomeController(ITokenManager tokenManager)
