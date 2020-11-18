@@ -17,7 +17,7 @@ string jobTitle = UserClaims.jobTitle;
 
 ## Setup   
 
-1. Your application must already be using Azure B2C.You should see the following in you <b>startup.cs</b>.
+1. Your application must already be using Azure B2C. You should see something similar <b>startup.cs</b>.
    ```C#
     services.AddAuthentication(AzureADB2CDefaults.AuthenticationScheme)
                 .AddAzureADB2C(options => Configuration.Bind(CurrentEnvironment.IsDevelopment() ? "AzureAdB2CDev" : "AzureAdB2C", options));
