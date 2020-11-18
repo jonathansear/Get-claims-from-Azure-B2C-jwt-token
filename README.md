@@ -1,4 +1,4 @@
-# Format the ClaimsPrincipal object returned by Azure B2C into a usable claims object 
+# Convert the ClaimsPrincipal object returned by Azure B2C into this adapter to read the user claims
 
 ## Introduction  
 
