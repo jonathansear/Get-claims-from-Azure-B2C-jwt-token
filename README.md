@@ -8,11 +8,11 @@
 ## Usage   
 
 ```C#
-ClaimProperties UserClaims = _tokenManager.ConvertClaims(User.Identities.FirstOrDefault().Claims);
+ClaimProperties userClaims = _tokenManager.ConvertClaims(User.Identities.FirstOrDefault().Claims);
 
-string name = UserClaims.name;
+string name = userClaims.name;
 
-string jobTitle = UserClaims.jobTitle;
+string jobTitle = userClaims.jobTitle;
 ```
 
 ## Setup   
@@ -44,11 +44,11 @@ public void ConfigureServices(IServiceCollection services)
 
         public IActionResult Index()
         {
-            ClaimProperties UserClaims = _tokenManager.ConvertClaims(User.Identities.FirstOrDefault().Claims);
+            ClaimProperties userClaims = _tokenManager.ConvertClaims(User.Identities.FirstOrDefault().Claims);
 
-            string name = UserClaims.name;
+            string name = userClaims.name;
 
-            string jobTitle = UserClaims.jobTitle;
+            string jobTitle = userClaims.jobTitle;
 
             return View();
         }
